@@ -17,7 +17,7 @@
         <table class="main-table">
             <tr>
                 <td class="fName">
-                    <input type="text" placeholder=" Function name">
+                    <input type="text" class="function-to-run" placeholder="Function name">
                 </td>
                 <td class="InFunctionSelect">
                     <label for="Functionalities">Inbuild functions</label>
@@ -25,22 +25,25 @@
                         <option value="empty" selected>
                             Please Select Function     
                         </option>
-                        <option value="type">
+                        <option value="type" class="typeMenu">
                             Type Matcher
                         </option>
                     </select>
                 </td>
                 <td>
-
+                    <button class="run">Run-test</button>
                 </td>
             </tr>
         </table>
     </main>
     <footer class="footer">
-        
+        Result for the current Test:-
+        <div class="result">
+            
+        </div>
     </footer>
-
-    
+    <!-- write your files below here -->
+    <script src="sample-test.js"></script>
     <script src="js-test/renderHtml.js"></script>
 </body>
 
