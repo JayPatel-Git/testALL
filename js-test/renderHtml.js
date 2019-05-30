@@ -13,16 +13,14 @@ function run() {
                 // if(!functionToRun.includes('()')) {
                      
                 // }
-                try {
-                    result = eval(functionToRun);
-                }   catch (err){
-                    console.log(err.stack);
-                    result = err.stack;
-                }
+                    result = main(functionToRun, inFnc);
+                   
                     let display = document.querySelector('.result');
                     display.textContent = result;
                     display.style.color = 'green'; 
             }
+
+            //instead of evaluating function should pass it to another func and then eval it by what ever inbuild functions to check
             //if(functionToRun)
         }
 }
