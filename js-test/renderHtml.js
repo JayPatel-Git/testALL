@@ -10,16 +10,11 @@ function run() {
             if(functionToRun === '') {
                 alert('Please enter function name to run.');
             }  else {
-                // if(!functionToRun.includes('()')) {
-                     
-                // }
                     result = main(functionToRun, inFnc);
-                   
                     let display = document.querySelector('.result');
                     display.textContent = result;
                     display.style.color = 'green'; 
             }
-
             //instead of evaluating function should pass it to another func and then eval it by what ever inbuild functions to check
             //if(functionToRun)
         }

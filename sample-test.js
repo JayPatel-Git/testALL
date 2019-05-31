@@ -1,5 +1,6 @@
 function a() {
-    return 2;
+    let x = [1, 2, 3], y = 3;
+    return x+y;
 }
 
 function b() {
